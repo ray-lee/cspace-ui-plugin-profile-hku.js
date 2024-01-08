@@ -1,5 +1,5 @@
-import defaultForm from './default';
+import hkuForm from './hku';
 
 export default (configContext) => ({
-  default: defaultForm(configContext),
+  hku: hkuForm(configContext),
 });

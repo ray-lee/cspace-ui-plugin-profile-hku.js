@@ -1,3 +1,5 @@
+import { defineMessages } from 'react-intl';
+
 const template = (configContext) => {
   const {
     React,
@@ -639,5 +641,12 @@ const template = (configContext) => {
 };
 
 export default (configContext) => ({
+  messages: defineMessages({
+    name: {
+      id: 'form.collectionobject.hku.name',
+      defaultMessage: 'HKU Template',
+    },
+  }),
+  sortOrder: 1,
   template: template(configContext),
 });
